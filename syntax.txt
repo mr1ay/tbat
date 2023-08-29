@@ -1,0 +1,90 @@
+example
+#switch case   ---input---  
+
+switch(a)
+case 3:
+echo answer 3
+break
+case 5:
+echo answer 5
+break 
+default:
+echo nothing
+break
+
+#switch case   ---output---
+
+        if %a% == 3  (
+            echo answer 3
+        
+        ) else if %a% == 5 (
+            echo answer 5
+        
+        ) else (
+            echo nothing
+        )
+
+
+example 
+#startup        
+---input---   ---output--- 
+
+eff           @echo off
+ef>           @echo off
+ef<           @echo on
+ef            @echo on
+
+sss           SetLocal 
+sse           EndLocal 
+sed           SetLocal EnableDelayedExpansion 
+sdd           SetLocal DisableDelayedExpansion l
+see           SetLocal EnableExtensions 
+sde           SetLocal DisableExtensions 
+ 
+c<            cls
+c<m           mode
+c<xy          cmdwiz setwindowpos
+c<t           title 
+c<c           color
+
+example
+#comment
+---input---   ---output--- 
+//            ::
+/*            ::
+*/            ::
+
+
+example
+#others
+---input---           ---output--- 
+package<alfafolder>   if not exist alfafolder   md alfafolder
+>import<batboxmouse>  if not exist batboxmouse  echo batboxmouse is not found
+<import<batboxmouse>  Adds the contents of the file in the core folder as a header to the bat file (warning if it doesn't exist)
+
+setp<a,alfa.txt>      set /p a=<alfa.txt
+setp<a>               set /p a=
+
+seta<a,a+1>           set /a a=%a%+1
+seta<4+3>             set /a 4+3
+  
+mdd<alfa>             md alfa&&cd /d alfa
+
+ife<alfa  command     if exist alfa
+!ife<alfa command     if not exist alfa
+ifd<alfa  command     if defined alfa
+!ifd<alfa command     if not defined alfa
+
+if<a 0 4  command     if %a% equ 4  command
+if<a 1 4  command     if %a% leq 4  command
+if<a 2 4  command     if %a% lss 4  command
+if<a 3 4  command     if %a% geq 4  command
+if<a 4 4  command     if %a% gtr 4  command
+if<a 5 4  command     if %a% neq 4  command
+
+
+if<xy 00 4 5         command   if %x% equ 4  if %y% equ 5   command
+if<xxy 130 4 5 6     command   if %x% leq 4  if %x% gtr 5  if %y% equ 6  command
+if<xyy 013 4 5 6     command   if %x% leq 4  if %y% leq 5  if %y% gtr 6  command
+if<xxyy 1313 4 5 6 7 command   if %x% leq 4  if %x% gtr 5  if %y% leq 6  if %y% gtr 7  command
+
