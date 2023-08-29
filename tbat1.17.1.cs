@@ -159,7 +159,7 @@ class Program
                            }
                            else
                            {
-                            resultList.Add("/,/  8  " + line.Trim());
+                            resultList.Add("/,/    " + line.Trim());
                             continue;  
                             
                            }
