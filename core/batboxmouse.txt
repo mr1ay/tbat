@@ -1,0 +1,10 @@
+::Usage:
+::call :batboxmouse 
+
+:batboxmouse
+	for /f "delims=: tokens=1,2,3" %%A in ('batbox /m') do (
+		set x=%%A
+		set y=%%B
+		set z=%%C
+	)
+	goto :eof

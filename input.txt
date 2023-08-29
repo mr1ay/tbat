@@ -1,0 +1,21 @@
+<import<batboxmouse>
+ef>
+c<m 55,20
+c<t yes
+c<c f
+:menu
+c<
+switch(a)
+case 3:
+echo answer 3
+break
+case 5:
+echo answer 5
+break 
+default:
+echo nothing
+break
+ 
+
+:k
+echo test
